@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	nome := "Yuri"
-	fmt.Println(nome)
+	var a int
+	a = 10
+	fmt.Println(a)
 }
