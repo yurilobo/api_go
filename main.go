@@ -2,13 +2,14 @@ package main
 
 import "fmt"
 
-func main() {
-	result, err := soma(1, 2)
-	fmt.Println(result, err)
+type Car struct {
+	Name  string
+	Model string
 }
-func soma(a int, b int) (int, error) {
-	if a+b > 10 {
-		return 0, fmt.Errorf("soma maior que 10")
-	}
-	return a + b, nil
+
+func main() {
+	carro := Car{"Fusca", "VW"}
+	fmt.Println(carro.Name)
+	carro.Model = "Fiat"
+	fmt.Println(carro.Model)
 }
