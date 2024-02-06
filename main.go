@@ -4,7 +4,7 @@ import "fmt"
 
 type Car struct {
 	Name  string
-	Model string
+	Price float64
 }
 
 func (c Car) Andar() {
